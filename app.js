@@ -16,6 +16,7 @@ import identityRoutes from "./routes/identity.js";
 import cryptoRoutes from "./routes/crypto.js";
 import passportRoutes from "./routes/passport.js";
 import canvasRoutes from "./routes/canvas.js";
+import sitemapRoutes from "./routes/sitemap.js";
 import x402PaidRoutes from "./routes/x402/paid.js";
 import agentRoutes from "./routes/agent.js";
 import { royaltyHeaders, phantomManifest } from "./lib/royalty.js";
@@ -34,6 +35,9 @@ app.use(royaltyHeaders);
 
 // Honeypot endpoints (must be early to catch scanners)
 app.use(honeypotRoutes);
+
+// SEO
+app.use(sitemapRoutes);
 
 // Royalty manifest for fork tracking
 app.get("/.well-known/phantom.json", phantomManifest);
