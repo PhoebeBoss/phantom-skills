@@ -14,6 +14,7 @@ import payoutExecuteRoutes from "./routes/creator/payout/execute.js";
 import stripeWebhookRoutes from "./routes/webhooks/stripe.js";
 import identityRoutes from "./routes/identity.js";
 import cryptoRoutes from "./routes/crypto.js";
+import passportRoutes from "./routes/passport.js";
 import x402PaidRoutes from "./routes/x402/paid.js";
 import agentRoutes from "./routes/agent.js";
 import { royaltyHeaders, phantomManifest } from "./lib/royalty.js";
@@ -70,6 +71,7 @@ import("./lib/x402.js")
 // Identity + Crypto services
 app.use(identityRoutes);
 app.use(cryptoRoutes);
+app.use(passportRoutes);
 
 // Free routes
 app.use(listRoutes);
