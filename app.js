@@ -62,12 +62,16 @@ app.use(agentRoutes);
 app.use(x402PaidRoutes);
 
 // x402 micropayment middleware (lazy load, non-blocking)
-import("./lib/x402.js")
-  .then(({ setupX402 }) => setupX402(app))
-  .then(() => console.log("[x402] Payment gate active"))
-  .catch((err) => {
-    console.warn("[x402] Payment gate not active:", err.message);
-  });
+try {
+  import("./lib/x402.js")
+    .then(({ setupX402 }) => setupX402(app))
+    .then(() => console.log("[x402] Payment gate active"))
+    .catch((err) => {
+      console.warn("[x402] Payment gate not active:", err.message);
+    });
+} catch (err) {
+  console.warn("[x402] Skipped:", err.message);
+}
 
 // Identity + Crypto services
 app.use(identityRoutes);

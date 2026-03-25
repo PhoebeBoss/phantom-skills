@@ -1,0 +1,13 @@
+;;
+;; Domain: phantomcapital.live
+;; Exported for Cloudflare DNS import
+;;
+
+;; CNAME records — point to Zeabur (DNS only, no proxy)
+phantomcapital.live.	1	IN	CNAME	phantomcapital.live.cname.zeabur-dns.com.
+www.phantomcapital.live.	1	IN	CNAME	phantomcapital.live.cname.zeabur-dns.com.
+
+;; Email — SPF, DKIM, DMARC
+phantomcapital.live.	1	IN	TXT	"v=spf1 include:amazonses.com ~all"
+_dmarc.phantomcapital.live.	1	IN	TXT	"v=DMARC1; p=none;"
+resend._domainkey.phantomcapital.live.	1	IN	TXT	"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDM2Bx0CIPVWB1nqT2bU/v0ujj2k3Uu2YC8SBufJBmMiZ/Q0RokI5o9DhIU28DeDJyC1jIwb7GZw99Dl9g3v3z/elFAjaIrl06n6xOfh5a4dV7ehPlVT3CS2joyseWtqzLse9vPWjYap01dFcRdD9EaKT6Eph3sOSwg7my5LN4NAQIDAQAB"
