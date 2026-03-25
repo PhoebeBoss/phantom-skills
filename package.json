@@ -19,7 +19,7 @@
   },
   "scripts": {
     "postinstall": "prisma generate",
-    "start": "npx prisma generate && node app.js",
+    "start": "node app.js",
     "dev": "node --watch app.js",
     "seed": "node prisma/seed.js"
   },
