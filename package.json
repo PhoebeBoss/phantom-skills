@@ -18,7 +18,7 @@
     }
   },
   "scripts": {
-    "postinstall": "prisma generate && prisma migrate deploy",
+    "postinstall": "prisma generate",
     "start": "node app.js",
     "dev": "node --watch app.js",
     "seed": "node prisma/seed.js"
