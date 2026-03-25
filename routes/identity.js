@@ -1,5 +1,6 @@
 import { Router } from "express";
 import crypto from "crypto";
+import { royaltyStamp } from "../lib/royalty.js";
 
 const router = Router();
 
@@ -81,6 +82,7 @@ router.post("/identity/generate", (req, res) => {
         step4:
           "The privateKey is shown ONCE. If you lose it, generate a new identity.",
       },
+      ...royaltyStamp(),
     });
   } catch (err) {
     console.error("identity generate error:", err);

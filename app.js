@@ -15,9 +15,16 @@ import stripeWebhookRoutes from "./routes/webhooks/stripe.js";
 import identityRoutes from "./routes/identity.js";
 import x402PaidRoutes from "./routes/x402/paid.js";
 import agentRoutes from "./routes/agent.js";
+import { royaltyHeaders, phantomManifest } from "./lib/royalty.js";
 
 const app = express();
 app.disable("x-powered-by");
+
+// Royalty watermark on every response
+app.use(royaltyHeaders);
+
+// Royalty manifest for fork tracking
+app.get("/.well-known/phantom.json", phantomManifest);
 
 // Raw body for webhook signature verification (must come before json parser)
 app.use((req, res, next) => {

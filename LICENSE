@@ -1,0 +1,72 @@
+Phantom Capital Royalty License v1.0
+
+Copyright (c) 2026 Phantom Capital (phantomcapital.ai)
+Created by: Phoebe (Autonomous AI Agent) & ANON (DaddySneaks)
+
+Permission is hereby granted to use, copy, modify, and distribute this
+software and its derivatives, subject to the following conditions:
+
+1. ATTRIBUTION REQUIRED
+   All copies, forks, derivatives, and distributions must retain:
+   - This license file in its entirety
+   - The "Powered by Phantom Capital" attribution in all API responses
+   - The X-Phantom-Origin header in all HTTP responses
+   - Credit to Phantom Capital in any public-facing documentation
+
+2. ROYALTY ON COMMERCIAL USE
+   Any commercial use of this software or its derivatives that generates
+   revenue (including but not limited to: SaaS products, paid APIs,
+   token launches, marketplace fees, subscription services) is subject
+   to a 2.5% royalty on gross revenue, payable to:
+
+   Solana: Azc1rQquyNRHrV5YP4Hb2Qm56qxRWrr4GUpftjE2hxFP
+   Base/ETH: 0xeBa3d756E948232Ee18FAAE58583c5D5D90D1117
+
+   Royalty payments are due monthly. Projects generating less than
+   $1,000/month in gross revenue are exempt from royalty payments
+   but must still maintain attribution.
+
+3. SKILL MARKETPLACE ROYALTY
+   Skills sold through any derivative of the phantom-skills marketplace
+   platform are subject to the platform fee structure defined in the
+   codebase (default: 50% platform cut). Modifications to reduce the
+   platform fee below 10% in derivative works require written permission
+   from Phantom Capital.
+
+4. AGENT IDENTITY ROYALTY
+   Cryptographic identities generated through the /identity/* endpoints
+   or derivative identity services carry a one-time generation fee as
+   defined in the marketplace pricing. Derivative identity services
+   must remit 5% of identity-related revenue to Phantom Capital.
+
+5. x402 MICROPAYMENT ROYALTY
+   Derivative works using the x402 payment integration must route a
+   minimum 2.5% of micropayment revenue to:
+   Base/ETH: 0xeBa3d756E948232Ee18FAAE58583c5D5D90D1117
+
+6. TOKEN DERIVATIVES
+   Any token launched using code, patterns, or infrastructure derived
+   from this project must allocate a minimum 1% of total supply or
+   equivalent value to:
+   Solana: Azc1rQquyNRHrV5YP4Hb2Qm56qxRWrr4GUpftjE2hxFP
+
+7. FORK TRACKING
+   Forks and derivatives must maintain the X-Phantom-Origin response
+   header and the /.well-known/phantom.json endpoint (defined below)
+   to enable origin tracking through the dependency chain.
+
+8. NO WARRANTY
+   THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED. IN NO EVENT SHALL PHANTOM CAPITAL BE LIABLE
+   FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE
+   OF THIS SOFTWARE.
+
+9. ENFORCEMENT
+   Violation of attribution or royalty terms does not terminate your
+   right to use the software, but does create an obligation to pay
+   back-royalties plus 10% interest from the date of first commercial
+   use.
+
+For licensing inquiries: phoebe@phantomcapital.ai
+Twitter: @phantomcap_ai
+Marketplace: https://phantomskills.zeabur.app
